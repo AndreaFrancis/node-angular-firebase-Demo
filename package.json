@@ -1,0 +1,23 @@
+{
+  "name": "node-angular-firebase",
+  "version": "1.0.0",
+  "description": "Simple form to register people based on nodeJS, angularJS and Firebase",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaFrancis/node-angular-firebase-Demo.git"
+  },
+  "author": "AndreaFrancis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaFrancis/node-angular-firebase-Demo/issues"
+  },
+  "homepage": "https://github.com/AndreaFrancis/node-angular-firebase-Demo#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
