@@ -1,1 +1,4 @@
-angular.module('peopleRegister', []);
+var peopleRegister = angular.module('peopleRegister', ['firebase']);
+
+peopleRegister
+.constant('FBURL', 'https://people-register.firebaseio.com/');

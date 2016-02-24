@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" ng-app="peopleRegister">
+
 <head>
   <meta charset="utf-8">
   <title>People register</title>
@@ -25,14 +26,35 @@
       <label for="phone">Celular:</label>
       <input id="phone" ng-model="person.phone" placeholder="Celular" />
     </div>
-    <button type="submit">Guardar</button>
+    <button type="submit" ng-click="createNewPerson()">Guardar</button>
     <button type="reset">Borrar</button>
   </form>
+
+  <h1>Registros</h1>
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>Email</th>
+      <th>Celular</th>
+      <th>Acciones</th>
+    </tr>
+    <tr ng-repeat="person in people">
+      <td>{{person.name}}</td>
+      <td>{{person.lastName}}</td>
+      <td>{{person.email}}</td>
+      <td>{{person.phone}}</td>
+      <td>
+        <button type="button" ng-click="deletePerson(person)">Eliminar</button>
+      </td>
+    </tr>
+  </table>
+
+  <script src="//cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
   <script src="lib/angular.min.js"></script>
   <script src="lib/angularfire.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/config.js"></script>
-  <script src="js/controllers.js"></script>
+  <script src="js/peopleCtrl.js"></script>
 </body>
 
 </html>
