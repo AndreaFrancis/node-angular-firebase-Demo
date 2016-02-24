@@ -2,6 +2,6 @@
 var express  = require('express');
 var app      = express();
 app.use(express.static(__dirname + '/app'));
-app.listen(80, function() {
-    console.log('node-angular-firebase demo is listening on port 8080');
+app.listen(3000, function() {
+    console.log('node-angular-firebase demo is listening');
 });
